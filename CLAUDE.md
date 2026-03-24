@@ -46,15 +46,20 @@ TASKS.md is the master index. It must always be kept in sync. Format:
 ## Task Lifecycle
 
 ### Creating a task
+**Always do ALL of these steps, in order, before doing any actual work:**
+
 1. Assign the next available `#` (incrementing integer, never reuse)
-2. Add a row to the **Open** table in `TASKS.md`
-3. Create a directory: `tasks/<YYYY-MM-DD>-<slug>/README.md`
-4. The task README should include:
+2. Create the task directory: `tasks/<YYYY-MM-DD>-<slug>/`
+3. Create `tasks/<YYYY-MM-DD>-<slug>/README.md` with:
    - **What:** Clear description of what needs to be done
    - **Why:** Context or motivation (if provided)
    - **Acceptance criteria:** How do we know it's done?
+   - **Plan:** Step-by-step plan for how to complete this task (numbered steps, specific and actionable)
    - **Notes:** Any relevant links, people, details
+4. Add a row to the **Open** table in `TASKS.md`
 5. Commit and push
+
+The task folder and README with plan must exist BEFORE any work begins. This is non-negotiable — it ensures every task is documented and trackable from the start.
 
 ### Updating a task
 1. Update the **Status** and **Last Updated** columns in `TASKS.md`
